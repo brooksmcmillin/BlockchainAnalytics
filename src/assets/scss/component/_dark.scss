@@ -1,0 +1,108 @@
+/*========= Dark Layout ========*/
+.dark-mode {
+  background-color: $dark-bg-container;
+  .main-contents,
+  code,
+  .base-container,
+  .ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+    background-color: $dark-bg-container;
+    color: $dark-bg-color;
+  }
+  .text-dark, .theme-head h4 {
+    color: $dark-bg-color !important;
+  }
+  .idb-block,
+  .idb-full-block,
+  .card,
+  .chat-wrapper .idb-block-title,
+  .send-msg,
+  .app-header,
+  .list-group-item,
+  .search-block,
+  .idb-customizer,
+  .chat-sidebar-pan,
+  .sidebar-panel,
+  .inbox-wrapper,
+  .inner-tab,
+  .chat-wrapper ,
+  .list-group li ,
+  .system-setting ul li {
+    background-color: $dark-bg;
+    color: $dark-bg-color;
+    border-color: $dark-border-color;
+  }
+  .idb-block *:not(.btn, i),
+  .idb-full-block *,
+  .card *,
+  .inner-tab * {
+    color: $dark-bg-color;
+    border-color: $dark-border-color;
+  }
+  input,
+  textarea,
+  .dropzone {
+    background-color: $dark-bg-container;
+    ::-moz-placeholder,
+    ::-moz-placeholder {
+      font-size: 1rem;
+      color: #fff;
+    }
+  }
+  .pagination {
+    li {
+      a {
+        background-color: $dark-bg-container;
+      }
+    }
+    .page-item.disabled .page-link {
+      background-color: $dark-bg;
+    }
+  }
+  .idb-nav {
+    > li {
+      &.active {
+        > a {
+          border-color: $red;
+          background-color: $dark-bg-container;
+          color: $red;
+        }
+      }
+      > a {
+        border-color: $dark-bg;
+        color: $dark-bg-color;
+        &:hover {
+          border-color: $red;
+          background-color: $dark-bg-container;
+        }
+      }
+      > ul.sub-menu {
+        > li {
+          > a {
+            background-color: $dark-bg-container;
+            color: $dark-bg-color;
+            .dot {
+              background-color: $dark-bg-color;
+            }
+          }
+          &.router-link-exact-active {
+            > a {
+              color: $red;
+              background-color: $dark-bg-container;
+              .dot {
+                background-color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-tabs,
+  .nav-pills {
+    > li {
+      > a.active {
+        background-color: $dark-bg-container;
+      }
+    }
+  }
+}

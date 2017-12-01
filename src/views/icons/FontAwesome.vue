@@ -1,0 +1,135 @@
+<template>
+  <div class="font-icon-wrapper">
+    <div class="idb-block">
+    	<div class="idb-block-content">
+    		<div class="row">
+    			<div>
+    				<ul class="list-unstyled icon-box row">
+    					<li v-for="icon in icons" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+    						<span><i :class="'fa fa-'+icon"></i></span>
+    						<span class="icon-title">{{icon}}</span>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</template>
+
+<script>
+const icons = [
+  'adjust',
+  'anchor',
+  'archive',
+  'area-chart',
+  'arrows',
+  'arrows-h',
+  'arrows-v',
+  'asterisk',
+  'at',
+  'automobile',
+  'balance-scale',
+  'ban',
+  'bank',
+  'bar-chart',
+  'bar-chart-o',
+  'barcode',
+  'bars',
+  'battery-0',
+  'battery-1',
+  'battery-2',
+  'battery-3',
+  'battery-4',
+  'battery-empty',
+  'battery-full',
+  'battery-half',
+  'battery-quarter',
+  'battery-three-quarters',
+  'bed',
+  'beer',
+  'bell',
+  'bell-o',
+  'bell-slash',
+  'bell-slash-o',
+  'bicycle',
+  'binoculars',
+  'birthday-cake',
+  'bolt',
+  'bomb',
+  'book',
+  'bookmark',
+  'bookmark-o',
+  'briefcase',
+  'bug',
+  'building',
+  'building-o',
+  'bullhorn',
+  'bullseye',
+  'bus',
+  'cab',
+  'calculator',
+  'calendar',
+  'calendar-check-o',
+  'calendar-minus-o',
+  'calendar-o',
+  'calendar-plus-o',
+  'calendar-times-o',
+  'camera',
+  'camera-retro',
+  'car',
+  'caret-square-o-down',
+  'caret-square-o-left',
+  'caret-square-o-right',
+  'caret-square-o-up',
+  'cart-arrow-down',
+  'cart-plus',
+  'cc',
+  'certificate',
+  'check',
+  'check-circle',
+  'check-circle-o',
+  'check-square',
+  'check-square-o',
+  'child',
+  'circle',
+  'circle-o',
+  'circle-o-notch',
+  'circle-thin',
+  'clock-o',
+  'clone',
+  'close',
+  'cloud',
+  'cloud-download',
+  'cloud-upload',
+  'code',
+  'code-fork',
+  'coffee',
+  'cog',
+  'cogs',
+  'comment',
+  'comment-o',
+  'commenting',
+  'commenting-o',
+  'comments',
+  'comments-o',
+  'compass',
+  'copyright',
+  'creative-commons',
+  'credit-card',
+  'crop',
+  'crosshairs',
+  'cube',
+  'cubes',
+  'cutlery',
+  'dashboard'
+]
+
+export default {
+  data: function () {
+    return {
+      icons: icons
+    }
+  }
+}
+</script>

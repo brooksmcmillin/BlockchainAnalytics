@@ -1,0 +1,47 @@
+/*=========== User List ==========*/
+.user-list-wrapper {
+  .idb-block {
+    .user-thumb {
+      img {
+        @include border(3px solid, $white, top bottom left right);
+        padding: 0.3125rem; //5px;
+      }
+    }
+    &:hover {
+      .user-thumb {
+        img {
+          border-color: $blue;
+        }
+      }
+    }
+  }
+  .btn-outline-secondary {
+    border-color: $gray-200;
+    color: $gray-900;
+    text-transform: capitalize;
+    &:hover {
+      background-color: transparent;
+      color: $red;
+    }
+  }
+}
+/*========== Responsive =========*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .media-sm {
+    display: inline-block;
+    .d-flex {
+      margin-bottom: 1rem;
+    }
+    .media-body {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 339px) {
+  .user-profile-wrapper {
+    .footer-action {
+      display: none;
+    }
+  }
+}

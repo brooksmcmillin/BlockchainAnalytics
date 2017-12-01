@@ -1,0 +1,125 @@
+/*========== Custom Variables =============*/
+// html font
+$html-font-size:                          16px;
+
+// Gradient Theme Color
+$light-primary:                  	        lighten($blue, 20%);
+$light-danger:                   	        lighten($red, 20%);
+$light-warning:                  	        lighten($yellow, 20%);
+$light-pink:                     	        lighten($pink, 20%);
+$light-dark:                     	        lighten($gray-900, 20%);
+$light-success:                           lighten($green, 20%);
+$light-info:                              lighten($cyan, 20%);
+
+// Breadcrumb
+$breadcrumb-color:                        #878787;
+$breadcrumb-font-size:                    1.875rem; //30px;
+$breadcrumb-margin:                       1.875rem; //30px;
+$breadcrumb-icon-font-size:               1.125rem; //18px;
+
+// Block Setting
+$block-bg:							                  $white;
+$block-border-radius:                     0;
+$block-margin:                            3.125rem; //50px;
+$block-space-x:                           1.875rem; //30px;
+$block-space-y:                           1.25rem; //20px;
+$block-box-shadow:                        0 3px 10px 0 #DFDFDF;
+$block-hover-box-shadow:                  0 13px 20px 0 #C9C9C9;
+$block-transition:                        all 0.4s ease-in-out 0s;
+
+// Block Title
+$block-title-font-color:                  #878787;
+$block-title-font-size:                   1.125rem; //18px
+$block-title-space-x:                     1.875rem; //30px;
+$block-title-space-y:                     1.25rem; //20px;
+$block-title-border-color:                #EAEAEA;
+
+// Block Contextual
+$block-contextual-link-color:             #C7CED4;
+$block-contextual-link-size:              1.25rem; //20px
+
+// Button Variables
+$btn-transform:                           uppercase;
+
+// Collapse Sidebar
+$closed-sidebar-width:								     4.375rem; // 70px;
+$closed-sidebar-nav-link-padding:					 0 1.563rem; //0 25px;
+$closed-sidebar-submenu-link-padding:			 0 1.25rem; //0 20px;
+$closed-sidebar-submenu-width:						 13.75rem; //220px;
+$closed-sidebar-submenu-link-hover-color:	 $white;
+
+// Chat Variables
+$chat-bg:                                 $gray-200;
+$chat-spacing:                            1.875rem; //30px;
+
+$chat-block-bg:                           $block-bg;
+$chat-block-spacing:                      0.625rem; // 10px;
+$chat-block-boxshadow:                    0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 3px 0 rgba(0,0,0,0.1);
+$chat-block-radius:                       3px;
+$chat-block-font-color:                   #14171A;
+$chat-block-font-size:                    0.875rem; //14px;
+
+$chat-item-padding:                       1rem;
+$chat-item-border:                        1px solid $input-border-color;
+$chat-item-bg-color:                      #fff;
+
+// Dragula
+$dragula-bg:                              $red;
+$dragula-color:                           $white;
+
+// Dark theme
+$dark-bg:                                 #424242;
+$dark-bg-color:                           #fff;
+$dark-bg-container:                       #303030;
+$dark-border-color:                       rgba(0, 0, 0, 0.1);
+
+// Ham icon
+$ham-line-height:					                1.4px;
+$ham-icon-height-width:				            2.5rem; //40px;
+$ham-icon-border-radius:			            0;
+$ham-icon-line-color: 				            $red;
+$ham-icon-border:					                none;
+$ham-icon-background-color:			          transparent;
+
+// Header variable
+$header-bg:                                $white;
+$header-shadow:                            0 3px 6px 0 rgba(0,0,0,0.16);
+$header-icon-color:                        #797F87;
+$header-icon-size:                         1.25rem; //20px;
+$header-height:                            4.375rem; //70px;
+$header-icon-spacing:                      1.25rem 0.9375rem; //20px 15px;
+$header-hover-icon:                        $blue;
+
+// Loader Variable
+$loader-cubeSize: 					               4em;
+$loader-light-bg: 					               #17C7DF;
+$loader-dark-bg: 					                 rgba(0,0,0,0.9);
+
+// Right Sidebar Variable
+$right-sidebar:                            16.88rem; //270px;
+$right-sidebar-bg:                         $white;
+$right-sidebar-box-shadow:                 0 3px 6px 0 rgba(0,0,0,0.16);
+
+// Square Box
+$square-font-size:                         0.5; // 50% relative to the container
+$square-box:                     	         (10, 15, 20, 30, 40, 50, 60, 85, 100);
+
+// SideBar Variable
+$sidebar-bg:                               $white;
+$sidebar-width: 					                 18.75rem;
+$sidebar-spacing:                          1.25rem 1.875rem; //20px 30px;
+$sidebar-link-transform:  			           capitalize;
+
+$sidebar-link-font-size:                    1rem; //16px
+$sidebar-link-font-color:                   #878787;
+$sidebar-icon-font-size:                    1.25rem; //20px
+
+$sidebar-hover-bg:                          #F3F3F3;
+$sidebar-hover-color:                       $red;
+
+$sidebar-submenu-font-color:                $gray-900;
+$sidebar-submenu-font-size:                 0.875rem; // 14px
+$sidebar-submenu-bg:                        #F3F3F3;
+$sidebar-submenu-spacing:                   0.625rem 0.625rem 0.625rem 4.5rem;
+
+$sidebar-box-shadow:                        0 1px 18px 0 rgba(0,0,0,0.15);

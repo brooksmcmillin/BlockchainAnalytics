@@ -1,0 +1,87 @@
+/*=========== Chk main content wrapper =============*/
+.shadow-box {
+    -webkit-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
+    -moz-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
+    -ms-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
+    -o-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
+    transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    &:hover {
+        -webkit-transform: translateY(-6px);
+        -moz-transform: translateY(-6px);
+        transform: translateY(-6px);
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+/*--- App block setting ---*/
+.idb-block {
+    background-color: $block-bg;
+    border-radius: $block-border-radius;
+    margin-bottom: $block-margin;
+    @extend .shadow-box;
+    transition: $block-transition;
+    position: relative;
+    .idb-block-content {
+        padding: $block-space-x $block-space-y;
+    }
+    .idb-full-block {
+        padding: 0;
+    }
+}
+
+.idb-contextual-link {
+    ul {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .no-caret-icon {
+        .btn {
+            padding: 0;
+            color: $block-contextual-link-color;
+            cursor: pointer;
+            font-size: $block-contextual-link-size;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+.idb-block-title {
+    border-bottom: $border-width solid $block-title-border-color;
+    padding: $block-title-space-x $block-title-space-y;
+    position: relative;
+    h2 {
+        margin-bottom: 0;
+        color: $block-title-font-color;
+        font-size: $block-title-font-size;
+        color: $block-title-font-color;
+    }
+}
+.idb-block-footer {
+   padding: $block-title-space-x $block-title-space-y;
+   border-top: $border-width solid $block-title-border-color;
+}
+.base-container {
+  background-color: $body-bg;
+}
+//*========= Breadcrumb ===========*/
+.page-title {
+    margin-bottom: $breadcrumb-margin;
+    h2 {
+        color: $breadcrumb-color;
+        font-size: $breadcrumb-font-size;
+        i {
+            font-size: $breadcrumb-icon-font-size;
+            margin-right: 0.625rem; //10px
+            vertical-align: middle;
+        }
+    }
+}
+@media (max-width: 500px) and (min-width: 320px) {
+  .page-title h2 {
+    font-size: 1.3rem;
+  }
+}

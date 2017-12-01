@@ -1,0 +1,322 @@
+/*========== Dashboard ============*/
+.dash-card {
+	.no-caret-icon {
+		.btn {
+			padding: 0;
+			color: $block-contextual-link-color;
+			cursor: pointer;
+			font-size: $block-contextual-link-size;
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+	.card-count {
+		color: $body-color;
+	}
+}
+.doughnut-stats {
+	span {
+		font-size: 0.75rem; //12px
+	}
+	h5 {
+		margin-bottom: 0.3125rem; //5px;
+	}
+}
+.artical-user {
+    border: 2px solid $blue;
+    padding: 0.3125rem; //5px;
+}
+.post-actions {
+	a {
+		color: $gray-700;
+		font-size: 0.75rem; //12px;
+		margin-right: 1.25rem; //20px;
+		&:last-child {
+			margin: 0;
+		}
+		&:hover {
+			color: $blue;
+		}
+		i {
+			margin-right: 0.625rem; //10px;
+			font-size: 0.875rem; //14px;
+		}
+	}
+}
+/*========== Chat Section ==========*/
+.chat-wrapper {
+	.chat-list {
+		background-color: $chat-bg;
+		padding: $chat-spacing;
+		.media {
+			margin-bottom: 0.625rem; //10px;
+			.chat-block {
+				background-color: $chat-block-bg;
+				border-radius: $chat-block-radius;
+				padding: $chat-block-spacing;
+				box-shadow: $chat-block-boxshadow;
+				p {
+					color: $chat-block-font-color;
+					font-size: $chat-block-font-size;
+					margin: 0;
+				}
+			}
+		}
+		.chat-section {
+			&:nth-child(even) {
+				.chat-block {
+					order: 1;
+				}
+				.media-object {
+					order: 2;
+					&.mr-20{
+						margin-left: 1.25rem; //20px;
+						margin-right: 0 !important;
+					}
+				}
+				.pl-70 {
+					padding-right: 4.375rem; //70px;
+					padding-left: 0 !important;
+				}
+			}
+		}
+		.sender {
+			font-size: 0.875rem; //14px;
+		}
+	}
+	.send-msg {
+	    background-color: $chat-block-bg;
+	    padding: 1.25rem; //20px;
+	    .form-control {
+	    	border-bottom: 1px solid $input-border-color !important;
+	    	border: none;
+	    	&:focus {
+	    		box-shadow: none;
+	    	}
+	    }
+	}
+}
+/*========= Slider Section ==========*/
+.slick-slider {
+	.slick-arrow {
+	    position: absolute;
+	    color: $gray-500;
+	    font-size: 1.375rem; //22px;
+	    top: 30%;
+	    z-index: 999;
+	    &.prev-arrow {
+	    	left: 30px;
+	    }
+	    &.next-arrow {
+	    	right: 30px;
+	    }
+	}
+}
+.product-stats {
+	h2 {
+		font-size: 2.25rem; //36px
+		font-weight: 300;
+	}
+	h4 {
+		color: $gray-700;
+		margin: 0;
+	}
+}
+.traffic-status {
+	span {
+		color: $gray-900;
+	}
+	h2 {
+		color: $gray-700;
+	}
+}
+.site-status {
+	h2 {
+		font-size: 2.25rem;
+		margin-bottom: 0.3125rem; //5px;
+		color: $gray-600;
+	}
+	p {
+		font-size: 1.125rem;
+	}
+}
+.weather-widget-1 {
+	* {
+		color: $white;
+		h2 {
+			font-size: 2rem;
+			margin-bottom: 1.25rem; //20px;
+		}
+		i {
+			font-size: 4rem;
+			margin-bottom: 1.25rem; //20px;
+		}
+	}
+}
+.footer-action {
+	> a {
+		color: $gray-700;
+		font-size: 1.375rem; //22px;
+		margin: 0 0.625rem; //0 10px;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+.blog-actions {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	> a {
+		color: $white;
+		font-size: 1.375rem; //22px;
+		margin: 0 0.625rem;; //0 10px;
+	}
+}
+/*========== Dashboard V2 ==========*/
+.statistic-count {
+	.stat-count {
+		@extend .site-status;
+		@include border(1px solid, $input-border-color, right);
+		width: 50%;
+		&:last-of-type {
+			border: none;
+		}
+	}
+	.sold-stoke {
+		h2 {
+			font-size: 3.5rem;
+		}
+	}
+}
+.element-list {
+	.ti-import {
+		font-size: 1.375rem; //22px;
+		color: $gray-700;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+//Social Grid
+.icon-social {
+    width: 90px;
+    height: 90px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    i {
+        font-size: 2.5rem; //40px;
+        text-align: center;
+    }
+}
+.icon-info-social {
+    float: left;
+    padding: 1.5rem 3rem 0 1.5rem;
+    width: calc(100% - 90px);
+}
+.name-social {
+    float: left;
+    font-size: 1.625rem;
+}
+.number-social {
+    float: right;
+    font-size: 1.2rem;
+    margin-top: 0.3125rem; //5px;
+}
+.wheater-banner {
+    background-image: url("/static/img/weather_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+		* {
+			color: $white;
+		}
+}
+#inbox-widget {
+	.tab-pane {
+		padding: 0;
+	}
+}
+/*======== Responsive =========*/
+@media (max-width: 1640px) and (min-width: 1199px) {
+	.d-lg-full {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.d-lg-half-block {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+}
+@media (max-width: 1450px) and (min-width: 1199px) {
+	.d-md-full {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.d-md-half-block {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	.real-traffic {
+		.p-30 {
+			padding: 0.875rem !important;
+		}
+	}
+	.campaign {
+		.mb-30 {
+			margin-bottom: 0.875rem !important;
+		}
+		.py-40 {
+			padding-top: 1.5rem !important;
+			padding-bottom: 1.5rem !important;
+		}
+	}
+	.name-social,
+	.number-social {
+		font-size: 1rem;
+		margin: 0;
+	}
+	.icon-info-social {
+		padding: 1.5rem 1rem 0 0.5rem;
+		width: calc(100% - 70px);
+	}
+	.icon-social {
+		width: 70px;
+		height: 70px;
+		i {
+			font-size: 1.5rem;
+		}
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+	.d-sm-full {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.d-sm-half-block {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+}
+@media (max-width: 992px) and (min-width: 320px) {
+	.d-xs-full {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.d-xs-half-block {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	.tour-tip {
+		display: none;
+	}
+}
+@media (max-width: 768px) and (min-width: 320px) {
+	.inner-container {
+    padding: 1.875rem 1.125rem 1.875rem 1.125rem;
+	}
+	.tour-tip {
+		display: none;
+	}
+}

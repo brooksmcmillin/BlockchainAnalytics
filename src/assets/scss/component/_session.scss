@@ -1,0 +1,126 @@
+/*=========== Session ==========*/
+.session-wrapper {
+  background-image: url("/static/img/session.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  .session-dark-block {
+    background: $gray-900;
+    position: relative;
+    margin-top: 17rem;
+    h2 {
+      color: $gray-700;
+    }
+    h4 {
+      color: $white;
+      line-height: 1.7;
+    }
+  }
+  .session-block {
+    background-color: $white;
+    padding: 2rem 2rem;
+    position: absolute;
+    right: 0;
+    left: 3rem;
+    top: -5rem;
+  }
+  .session-title {
+    color: #DDDDDD;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+}
+.custom-field {
+  border-bottom: 1px solid $input-border-color !important;
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.session-block-signin {
+  @extend .session-block;
+  left: 0 !important;
+  right: 3rem !important;
+}
+.session-social-links {
+  li {
+    a {
+      font-size: 0.875rem; //14px;
+      color: $gray-700;
+      vertical-align: top;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+/*========== Lock Screen =========*/
+.lock-screen-wrapper {
+  background-image: url(/static/img/lock-screen.png);
+  @extend .session-wrapper;
+  .form-control {
+    background-color: transparent;
+    border-bottom: 1px solid $white !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: $white;
+  }
+  .lock-screen-block {
+    position: relative;
+    top: 80%;
+  }
+  input::-moz-placeholder {
+    color: $white;
+  }
+}
+.btn-circle {
+  @include border(2px solid, $white, top left right bottom);
+  i {
+    font-weight: bold;
+  }
+  &:hover {
+    color: $gray-900;
+  }
+}
+/*========== Responsive ==========*/
+@media (max-width: 992px) and (min-width: 320px) {
+  .session-wrapper {
+    .session-dark-block {
+      .p-70 {
+        padding: 4rem 1.375rem !important;
+      }
+    }
+  }
+  .container-full {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.9375rem; //15px;
+    padding-left: 0.9375rem; //15px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .session-wrapper {
+    .session-dark-block {
+      margin-top: 3rem;
+      .col-sm-12 {
+        padding: 0;
+      }
+    }
+    .session-block {
+      position: relative;
+      right: 0;
+      left: 0;
+      top: 0rem;
+    }
+    .px-50, .py-70 {
+      padding: 1.5rem !important;
+    }
+  }
+}

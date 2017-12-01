@@ -1,0 +1,209 @@
+{
+    "routes" : [
+        {
+            "menu_title"              : "Dashboard",
+            "menu_icon"               : "ti-dashboard",
+            "child_routes"            : [
+                {
+                    "path"            : "/",
+                    "menu_title"      : "Dashboard 1"
+                },
+                {
+                    "route_name"      : "dashboard-v2" ,
+                    "path"            : "/dashboard/dashboard-v2",
+                    "menu_title"      : "Dashboard 2"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "UI Elements",
+            "menu_icon"               : "ti-ruler-alt-2",
+            "child_routes"            : [
+                {
+                    "path"            : "/ui-elements/buttons",
+                    "menu_title"      : "Buttons"
+                },
+                {
+                    "path"            : "/ui-elements/progress-bar",
+                    "menu_title"      : "Progress Bar"
+                },
+                {
+                    "path"            : "/ui-elements/tabs",
+                    "menu_title"      : "Tabs"
+                },
+                {
+                    "path"            : "/ui-elements/accordions",
+                    "menu_title"      : "Accordions"
+                },
+                {
+                    "path"            : "/ui-elements/pagination",
+                    "menu_title"      : "Pagination"
+                },
+                {
+                    "path"            : "/ui-elements/tooltip",
+                    "menu_title"      : "Tooltip"
+                },
+                {
+                    "path"            : "/ui-elements/badges",
+                    "menu_title"      : "Badges"
+                },
+                {
+                    "path"            : "/ui-elements/cards",
+                    "menu_title"      : "Cards"
+                },
+                {
+                    "path"            : "/ui-elements/carousel",
+                    "menu_title"      : "Carousel"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Inbox",
+            "menu_icon"               : "ti-email",
+            "path"                    : "/inbox",
+            "child_routes"            : null
+        },
+        {
+            "menu_title"              : "Editor",
+            "menu_icon"               : "ti-pencil-alt",
+            "child_routes"            : [
+                {
+                    "path"            : "/editor/quill-editor",
+                    "menu_title"      : "Quill Editor"
+                },
+                {
+                    "path"            : "/editor/wysiwyg",
+                    "menu_title"      : "Wysiwyg Editor"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Drag and Drop",
+            "menu_icon"               : "ti-mouse-alt",
+            "child_routes"            : [
+                {
+                    "path"            : "/drag-drop/vuedraggable",
+                    "menu_title"      : "Vuedraggable"
+                },
+                {
+                    "path"            : "/drag-drop/vue2-dragula",
+                    "menu_title"      : "Vue2 Dragula"
+                },
+                {
+                    "path"            : "/drag-drop/draggable-resizable",
+                    "menu_title"      : "Draggable Resizable"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Icons",
+            "menu_icon"               : "ti-star",
+            "child_routes"            : [
+                {
+                    "path"            : "/icons/themify",
+                    "menu_title"      : "Themify"
+                },
+                {
+                    "path"            : "/icons/material",
+                    "menu_title"      : "Material"
+                },
+                {
+                    "path"            : "/icons/font-awesome",
+                    "menu_title"      : "Font Awesome"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Charts",
+            "menu_icon"               : "ti-pie-chart",
+            "child_routes"            : [
+                {
+                    "path"            : "/charts/vue-chartjs",
+                    "menu_title"      : "Vue Chartjs"
+                },
+                {
+                    "path"            : "/charts/vue-echarts",
+                    "menu_title"      : "Vue Echarts"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Tables",
+            "menu_icon"                : "ti-layout",
+            "child_routes"            : [
+                {
+                    "path"            : "/tables/basic",
+                    "menu_title"      : "Basic"
+                },
+                {
+                    "path"            : "/tables/responsive",
+                    "menu_title"      : "Responsive"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Maps",
+            "menu_icon"               : "ti-map-alt",
+            "child_routes"            : [
+                {
+                    "path"            : "/maps/google-maps",
+                    "menu_title"      : "Google Maps"
+                },
+                {
+                    "path"            : "/maps/leaflet-maps",
+                    "menu_title"      : "Leaflet Maps"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Pages",
+            "menu_icon"               : "ti-layers",
+            "child_routes"            : [
+                {
+                    "path"            : "/pages/gallery",
+                    "menu_title"      : "Gallery"
+                },
+                {
+                    "path"            : "/pages/pricing",
+                    "menu_title"      : "Pricing"
+                },
+                {
+                    "path"            : "/pages/blank",
+                    "menu_title"      : "Blank"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Users",
+            "menu_icon"               : "ti-user",
+            "child_routes"            : [
+                {
+                    "path"            : "/users/user-profile",
+                    "menu_title"      : "User Profile"
+                },
+                {
+                    "path"            : "/users/users-list",
+                    "menu_title"      : "Users List"
+                }
+            ]
+        },
+        {
+            "menu_title"              : "Session",
+            "menu_icon"               : "ti-timer",
+            "child_routes"            : [
+                {
+                    "path"            : "/session/login",
+                    "menu_title"      : "Login"
+                },
+                {
+                    "path"            : "/session/sign-up",
+                    "menu_title"      : "Sign Up"
+                },
+                {
+                    "path"            : "/session/lock-screen",
+                    "menu_title"      : "Lock Screen"
+                }
+            ]
+        }
+    ]
+}

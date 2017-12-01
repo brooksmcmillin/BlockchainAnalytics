@@ -1,0 +1,296 @@
+/*=========== Right Sidebar ============*/
+.idb-customizer,
+.chat-sidebar-pan {
+  right: 0;
+  width: 300px;
+  backface-visibility: hidden;
+  background: $block-bg;
+  bottom: 0;
+  position: fixed;
+  box-shadow: -6px 8px 11px 0 rgba(0, 0, 0, 0.33);
+  right: 0px;
+  transition: right 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99) 0s;
+  width: 300px;
+  z-index: 99;
+  top: 72px;
+}
+.idb-customizer {
+  .settings-panel {
+    .theme-options {
+      .theme-head {
+        border-bottom: 2px solid $input-border-color;
+        padding: 1.5rem 1.5rem;
+      }
+      .theme-body {
+        padding: 1.5rem;
+        .layout-item {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+.customizer-toggle {
+  border: medium none;
+  color: $white !important;
+  cursor: pointer;
+  height: 45px;
+  left: -45px;
+  line-height: 45px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  width: 45px;
+}
+.customizer-hide .idb-customizer,
+.collapse-hide .chat-sidebar-pan {
+  right: -300px;
+  .fa-wrench::before {
+    content: "\f013";
+  }
+}
+.settings-panel, .system-setting {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.system-setting {
+  padding-top: 1rem;
+  .setting-header {
+    padding: $chat-item-padding;
+    border-bottom: $chat-item-border;
+  }
+  ul {
+    li {
+      padding: $chat-item-padding;
+      border-bottom: $chat-item-border;
+      background: $chat-item-bg-color;
+    }
+  }
+}
+.form-check-label {
+  img {
+    margin: 0 -26px 0 -26px;
+    display: block;
+  }
+}
+/*========= Swicthes css ============*/
+.onoffswitch {
+  position: relative;
+  width: 75px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 0.875rem; //14px;
+  color: $white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  padding-left: 0.625rem; //10px;
+  background-color: $yellow;
+  color: $white;
+}
+.onoffswitch-inner:after {
+  content: "\f00d";
+  font-family: 'FontAwesome';
+  padding-right: 0.625rem; //10px;
+  background-color: $gray-800;
+  color: $white;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 0.375rem; //6px;
+  background: $white;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 43px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+@media(max-width:768px) {
+  .idb-customizer {
+    display: none !important;
+  }
+}
+/*=========== Theme styling  =============*/
+
+.green {
+  .sidebar-panel {
+    @extend .gradient-success;
+    .toolbar {
+      @extend .gradient-success;
+    }
+    .idb-nav {
+      > li {
+        &.active a {
+          background-color: lighten($green, .7%);
+          border-color: $sidebar-hover-color
+        }
+        > a {
+          border-left: 6px solid lighten($green, .7%);
+          &:hover {
+            background-color: lighten($green, .7%);
+            border-color: $sidebar-hover-color;
+          }
+        }
+        ul.sub-menu {
+          background-color: lighten($green, .7%);
+          > li {
+            > a {
+              &:hover {
+                color: $sidebar-hover-color;
+              }
+            }
+          }
+          > li.router-link-exact-active {
+            a {
+              color: $red;
+            }
+            a .dot {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customizer-toggle {
+    background-color: $green !important;
+  }
+}
+
+.orange {
+  .sidebar-panel {
+    @extend .gradient-warning;
+    .toolbar {
+      @extend .gradient-warning;
+    }
+    .idb-nav {
+      > li {
+        &.active a {
+          background-color: lighten($orange, 7%);
+          border-color: $sidebar-hover-color
+        }
+        > a {
+          border-left: 6px solid lighten($orange, 7%);
+          &:hover {
+            background-color: lighten($orange, 7%);
+            border-color: $sidebar-hover-color;
+          }
+        }
+        ul.sub-menu {
+          background-color: lighten($orange, 7%);
+          > li {
+            > a {
+              &:hover {
+                color: $sidebar-hover-color;
+              }
+            }
+          }
+          > li.router-link-exact-active {
+            a {
+              color: $red;
+            }
+            a .dot {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customizer-toggle {
+    background-color: $orange !important;
+  }
+}
+
+.red {
+  .sidebar-panel {
+    @extend .gradient-danger;
+    .toolbar {
+      @extend .gradient-danger;
+    }
+    .idb-nav {
+      > li {
+        &.active a {
+          background-color: lighten($red, 7%);
+          border-color: $sidebar-hover-color
+        }
+        > a {
+          border-left: 6px solid lighten($red, 7%);
+          &:hover {
+            background-color: lighten($red, 7%);
+            border-color: $sidebar-hover-color;
+          }
+        }
+        ul.sub-menu {
+          background-color: lighten($red, 7%);
+          > li {
+            > a {
+              &:hover {
+                color: $sidebar-hover-color;
+              }
+            }
+          }
+          > li.router-link-exact-active {
+            a {
+              color: $red;
+            }
+            a .dot {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customizer-toggle {
+    background-color: $red !important;
+  }
+}
+
+.more-theme-style {
+  a {
+    color: $body-color;
+    i {
+      padding-left: 0.2rem;
+      padding-right: 0.5rem;
+    }
+  }
+}

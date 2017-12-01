@@ -1,0 +1,77 @@
+/*========== Buttons =========*/
+.btn-pill {
+  border-radius: 2.5rem; //40px;
+}
+.btn-rounded {
+  border-radius: 100%;
+}
+.btn-small {
+	padding: 0.3125rem 0.9375rem 0.125rem; //5px 15px 2px;
+	font-size: 0.875rem; //14px;
+}
+.btn {
+	text-transform: $btn-transform;
+}
+.btn-dark {
+	@extend .gradient-dark;
+}
+.btn-primary {
+	@extend .gradient-primary;
+}
+.btn-warning {
+	@extend .gradient-warning;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.btn-danger {
+	@extend .gradient-danger;
+}
+.btn-info {
+	@extend .gradient-info;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.btn-success {
+  @extend .gradient-success;
+}
+.btn-group-justified {
+  display: flex;
+  width: 100%;
+  .btn,
+  .btn-group {
+    flex: 1;
+    border-radius: 0;
+    .btn {
+      width: 100%;
+    }
+    .dropdown-menu {
+      left: auto;
+    }
+  }
+}
+.btn-right {
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.26), 0 10px 20px 0 rgba(0,0,0,0.19);
+  position: absolute;
+  margin-top: -1.563rem; //-25px;
+  right: 20px;
+  border: none;
+  line-height: 2.2;
+}
+/*=========== Badge ==========*/
+.badge-style .badge {
+    padding: 0.5rem 1.563rem; //8px 25px;
+    color: $white;
+    margin: 0 0.625rem 0.625rem 0;
+}
+.heading {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.563rem; //25px;
+    .badge {
+      color: $white;
+    }
+  }
+}

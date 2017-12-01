@@ -1,0 +1,29 @@
+/*========= Boxes Layout =========*/
+.box-layout {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  width: 1170px;
+  .d-lg-half-block,
+  .d-md-block,
+  .d-lg-block,
+  .d-sm-block {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .b-50 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .b-100 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .main-content {
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 1170px;
+  }
+  .mat-list li, .icon-wrapper li {
+    width: 50%;
+  }
+}
