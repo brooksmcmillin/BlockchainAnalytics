@@ -5,7 +5,7 @@
         <div class="idb-block mb-30 dash-card">
           <div class="idb-block-content">
             <div class="d-flex justify-content-between mb-20">
-              <h5 class="m-0">Total Revenue</h5>
+              <h5 class="m-0">Current Block </h5>
               <b-dropdown variant="link" class="no-caret-icon">
                 <template slot="button-content">
                   <i class="ti-more-alt"></i>

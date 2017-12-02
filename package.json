@@ -49,7 +49,8 @@
     "vue2-google-maps": "^0.8.3",
     "vue2-leaflet": "0.0.55",
     "vuedraggable": "^2.14.1",
-    "weather-icons": "^1.3.2"
+    "weather-icons": "^1.3.2",
+    "web3": "^1.0.0-beta.26"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
