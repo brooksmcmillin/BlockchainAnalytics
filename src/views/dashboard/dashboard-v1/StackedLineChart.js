@@ -1,6 +1,8 @@
-import Chart from 'vue-chartjs'
+import {Line, mixins} from 'vue-chartjs'
 
-export default Chart.Line.extend({
+export default Line.extend({
+  mixins: [mixins.reactiveProp, mixins.reactiveData],
+  props: ['lineChartData'],
   data: function () {
     return {
       gradient: null,
@@ -12,7 +14,7 @@ export default Chart.Line.extend({
           yAxes: [{
             ticks: {
               beginAtZero: true,
-              max: 600,
+             // max: 600,
               padding: 20
             },
             gridLines: {
@@ -39,7 +41,7 @@ export default Chart.Line.extend({
     }
   },
   mounted () {
-    this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
+    /* this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
     this.gradient2 = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450)
 
     this.gradient.addColorStop(0, 'rgba(246, 74, 50, 0.5)')
@@ -48,9 +50,9 @@ export default Chart.Line.extend({
 
     this.gradient2.addColorStop(0, 'rgba(23, 199, 223, 0.9)')
     this.gradient2.addColorStop(0.5, 'rgba(23, 199, 223, 0.25)')
-    this.gradient2.addColorStop(1, 'rgba(23, 199, 223, 0)')
+    this.gradient2.addColorStop(1, 'rgba(23, 199, 223, 0)') */
 
-    this.renderChart({
+    /* this.renderChart({
       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       datasets: [
         {
@@ -72,6 +74,7 @@ export default Chart.Line.extend({
           data: [220, 150, 100, 180, 190, 110, 220, 350, 205, 210, 190, 220]
         }
       ]
-    }, this.options)
+    }, this.options) */
+    this.renderChart(this.lineChartData, this.options)
   }
 })

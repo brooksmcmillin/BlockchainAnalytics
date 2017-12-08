@@ -20,22 +20,186 @@
                 <h2 class="card-count">
                   <i-count-up
                     :start="0"
-                    :end="256"
+                    :end="blockNo"
                     :decimals="0"
                     :duration="10"
                     :options="counterOptions"
                   ></i-count-up>
                 </h2>
-                <p class="mb-0">Revenue Today</p>
+                <p class="mb-0"></p>
               </div>
               <div class="col-xs-6 col-sm-5 col-md-5">
-                <revenue-mini-chart :width="100" :height="50"></revenue-mini-chart>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-6 col-xl-3 d-lg-half-block b-50">
+        <div class="idb-block mb-30 dash-card">
+          <div class="idb-block-content">
+            <div class="d-flex justify-content-between mb-20">
+              <h5 class="m-0"> Timestamp </h5>
+              <b-dropdown variant="link" class="no-caret-icon">
+                <template slot="button-content">
+                  <i class="ti-more-alt"></i>
+                </template>
+                <b-dropdown-item href="#"><i class="ti-eye"></i> View</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-pencil"></i> Edit</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-trash"></i> Delete</b-dropdown-item>
+              </b-dropdown>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-7 col-md-7">
+                <h2 class="card-count">
+                  <i-count-up
+                    :start="0"
+                    :end="timestamp"
+                    :decimals="0"
+                    :duration="10"
+                    :options="counterOptions"
+                  ></i-count-up>
+                </h2>
+                <p class="mb-0"></p>
+              </div>
+              <div class="col-xs-6 col-sm-5 col-md-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3 d-lg-half-block b-50">
+        <div class="idb-block mb-30 dash-card">
+          <div class="idb-block-content">
+            <div class="d-flex justify-content-between mb-20">
+              <h5 class="m-0"> Difficulty </h5>
+              <b-dropdown variant="link" class="no-caret-icon">
+                <template slot="button-content">
+                  <i class="ti-more-alt"></i>
+                </template>
+                <b-dropdown-item href="#"><i class="ti-eye"></i> View</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-pencil"></i> Edit</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-trash"></i> Delete</b-dropdown-item>
+              </b-dropdown>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-7 col-md-7">
+                <h2 class="card-count">
+                  <i-count-up
+                    :start="0"
+                    :end="difficulty"
+                    :decimals="0"
+                    :duration="10"
+                    :options="counterOptions"
+                  ></i-count-up>
+                </h2>
+                <p class="mb-0"></p>
+              </div>
+              <div class="col-xs-6 col-sm-5 col-md-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3 d-lg-half-block b-50">
+        <div class="idb-block mb-30 dash-card">
+          <div class="idb-block-content">
+            <div class="d-flex justify-content-between mb-20">
+              <h5 class="m-0"> Transaction Count </h5>
+              <b-dropdown variant="link" class="no-caret-icon">
+                <template slot="button-content">
+                  <i class="ti-more-alt"></i>
+                </template>
+                <b-dropdown-item href="#"><i class="ti-eye"></i> View</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-pencil"></i> Edit</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-trash"></i> Delete</b-dropdown-item>
+              </b-dropdown>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-7 col-md-7">
+                <h2 class="card-count">
+                  <i-count-up
+                    :start="0"
+                    :end="transactionCount"
+                    :decimals="0"
+                    :duration="10"
+                    :options="counterOptions"
+                  ></i-count-up>
+                </h2>
+                <p class="mb-0"></p>
+              </div>
+              <div class="col-xs-6 col-sm-5 col-md-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3 d-lg-half-block b-50">
+        <div class="idb-block mb-30 dash-card">
+          <div class="idb-block-content">
+            <div class="d-flex justify-content-between mb-20">
+              <h5 class="m-0"> Gas Used </h5>
+              <b-dropdown variant="link" class="no-caret-icon">
+                <template slot="button-content">
+                  <i class="ti-more-alt"></i>
+                </template>
+                <b-dropdown-item href="#"><i class="ti-eye"></i> View</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-pencil"></i> Edit</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-trash"></i> Delete</b-dropdown-item>
+              </b-dropdown>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-7 col-md-7">
+                <h2 class="card-count">
+                  <i-count-up
+                    :start="0"
+                    :end="gasUsed"
+                    :decimals="0"
+                    :duration="10"
+                    :options="counterOptions"
+                  ></i-count-up>
+                </h2>
+                <p class="mb-0"></p>
+              </div>
+              <div class="col-xs-6 col-sm-5 col-md-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-3 d-lg-half-block b-50">
+        <div class="idb-block mb-30 dash-card">
+          <div class="idb-block-content">
+            <div class="d-flex justify-content-between mb-20">
+              <h5 class="m-0"> Uncle Count </h5>
+              <b-dropdown variant="link" class="no-caret-icon">
+                <template slot="button-content">
+                  <i class="ti-more-alt"></i>
+                </template>
+                <b-dropdown-item href="#"><i class="ti-eye"></i> View</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-pencil"></i> Edit</b-dropdown-item>
+                <b-dropdown-item href="#"><i class="ti-trash"></i> Delete</b-dropdown-item>
+              </b-dropdown>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-7 col-md-7">
+                <h2 class="card-count">
+                  <i-count-up
+                    :start="0"
+                    :end="uncleCount"
+                    :decimals="0"
+                    :duration="10"
+                    :options="counterOptions"
+                  ></i-count-up>
+                </h2>
+                <p class="mb-0"></p>
+              </div>
+              <div class="col-xs-6 col-sm-5 col-md-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--div class="col-md-6 col-lg-6 col-xl-3 d-lg-half-block b-50">
         <div class="idb-block mb-30 dash-card">
           <div class="idb-block-content">
             <div class="d-flex justify-content-between mb-20">
@@ -136,7 +300,7 @@
             <b-progress :value="85" height="5px" variant="danger gradient-danger"></b-progress>
           </div>
         </div>
-      </div>
+      </div-->
     </div>
     <div class="row">
       <div class="col-md-12 col-lg-12 col-xl-6">
@@ -144,7 +308,7 @@
           <div class="idb-block-title">
             <div class="d-flex justify-content-between">
               <div class="d-flex align-self-center">
-                <h2>Sales Report</h2>
+                <h2>Past Transaction Counts</h2>
               </div>
               <div class="d-flex align-self-center idb-contextual-link">
                 <b-dropdown variant="link" class="no-caret-icon">
@@ -159,7 +323,7 @@
             </div>
           </div>
           <div class="idb-block-content">
-            <sales-report-chart :width="300" :height="200"></sales-report-chart>
+            <sales-report-chart :width="300" :height="200" :chart-data="transactionCountData"></sales-report-chart>
           </div>
         </div>
       </div>
@@ -168,7 +332,7 @@
           <div class="idb-block-title">
             <div class="d-flex justify-content-between">
               <div class="d-flex align-self-center">
-                <h2>User Stats</h2>
+                <h2>Difficulty Progression</h2>
               </div>
               <div class="d-flex align-self-center idb-contextual-link">
                 <b-dropdown variant="link" class="no-caret-icon">
@@ -183,12 +347,12 @@
             </div>
           </div>
           <div class="idb-block-content">
-            <stacked-line-chart :width="300" :height="200"></stacked-line-chart>
+            <stacked-line-chart :width="300" :height="200" :line-chart-data="difficultyData"></stacked-line-chart>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <!--div class="row">
       <div class="col-md-12 col-lg-12 col-xl-4 d-lg-half-block">
         <div class="idb-block">
           <div class="idb-block-title">
@@ -351,8 +515,8 @@
                       <h5>How to build your own store in less then 10 min with Adminify</h5>
                       <p class="fs-12 artical-author">By: Nelson Juliyet</p>
                       <div class="post-actions mb-20">
-                        <a href="javascript:;" class="mr-3"><i class="ti-pencil-alt"></i>Edit Post</a>
-                        <a href="javascript:;"><i class="ti-trash"></i>Delete Post</a>
+                        <a href="javascript:" class="mr-3"><i class="ti-pencil-alt"></i>Edit Post</a>
+                        <a href="javascript:"><i class="ti-trash"></i>Delete Post</a>
                       </div>
                       <button class="btn btn-danger">PUBLISH</button>
                     </td>
@@ -366,8 +530,8 @@
                       <h5>How Adminify is faster than the others</h5>
                       <p class="fs-12 artical-author">By: Elia Span</p>
                       <div class="post-actions mb-20">
-                        <a href="javascript:;" class="mr-3"><i class="ti-pencil-alt"></i>Edit Post</a>
-                        <a href="javascript:;"><i class="ti-trash"></i>Delete Post</a>
+                        <a href="javascript:" class="mr-3"><i class="ti-pencil-alt"></i>Edit Post</a>
+                        <a href="javascript:"><i class="ti-trash"></i>Delete Post</a>
                       </div>
                       <button class="btn btn-primary">PUBLISHED</button>
                     </td>
@@ -1158,8 +1322,8 @@
             <div class="blog-content">
               <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, dolores facilis maiores minus itaque excepturi.</p>
               <div class="post-actions mb-20">
-                <a href="javascrit:;"><i class="ti-comment"></i>21 Comments</a>
-                <a href="javascrit:;"><i class="ti-thumb-up"></i>16 Likes</a>
+                <a href="javascrit:"><i class="ti-comment"></i>21 Comments</a>
+                <a href="javascrit:"><i class="ti-thumb-up"></i>16 Likes</a>
               </div>
             </div>
           </div>
@@ -1181,9 +1345,9 @@
           <div class="pos-relative">
             <img class="img-fluid w-100" src="/static/img/post-2.jpg" width="500" height="500" />
             <div class="blog-actions">
-              <a href="javascript:;"><i class="ti-pencil-alt"></i></a>
-              <a href="javascript:;"><i class="ti-trash"></i></a>
-              <a href="javascript:;"><i class="ti-sharethis"></i></a>
+              <a href="javascript:"><i class="ti-pencil-alt"></i></a>
+              <a href="javascript:"><i class="ti-trash"></i></a>
+              <a href="javascript:"><i class="ti-sharethis"></i></a>
             </div>
             <div class="idb-position-absolute">
               <div class="blog-content">
@@ -1202,7 +1366,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
   </div>
 </template>
 
@@ -1226,6 +1390,65 @@ import GlobalSales from './dashboard/dashboard-v1/GlobalSales.vue'
 import ICountUp from 'vue-countup-v2'
 import VueEasyPieChart from 'vue-easy-pie-chart'
 import 'vue-easy-pie-chart/dist/vue-easy-pie-chart.css'
+// import Web3 from 'web3'
+import 'jquery/dist/jquery.min.js'
+import $ from 'jquery'
+
+let blockNo = 0
+let timestamp = 0
+let difficulty = 0
+let gasUsed = 0
+let transactionCount = 0
+let uncleCount = 0
+
+let transactionCountData = {
+  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+  datasets: [{
+    label: 'Number of Transactions',
+    backgroundColor: '#17C7DF',
+    data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+  }
+  ]
+}
+
+let difficultyData = {
+  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+  datasets: [{
+    label: 'Difficulty',
+    borderColor: '#F64A32',
+    pointBackgroundColor: '#FFF',
+    // backgroundColor: '#FFF',
+    borderWidth: 2,
+    lineTension: 0,
+    data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+  }
+  ]
+}
+
+$.get('http://ethapi.inteligusolutions.com/basic_info.php', function (data) {
+  // console.log(data)
+  data = JSON.parse(data)
+  console.log('test: ' + data['block'])
+  blockNo = parseInt(data['block'])
+  timestamp = parseInt(data['timestamp'])
+  difficulty = parseInt(data['difficulty'])
+  gasUsed = parseInt(data['gasUsed'])
+  transactionCount = data['transactions'].length
+  uncleCount = data['uncles'].length
+
+  transactionCountData = {
+    labels: [blockNo, blockNo - 1, blockNo - 2, blockNo - 3, blockNo - 4, blockNo - 5, blockNo - 6, blockNo - 7, blockNo - 8, blockNo - 9].reverse(),
+    datasets: [{
+      label: 'Number of Transactions',
+      backgroundColor: '#17C7DF',
+      data: data['transactionCountGraph']
+    }
+    ]
+  }
+
+  difficultyData.labels = [blockNo, blockNo - 1, blockNo - 2, blockNo - 3, blockNo - 4, blockNo - 5, blockNo - 6, blockNo - 7, blockNo - 8, blockNo - 9].reverse()
+  difficultyData.datasets[0].data = data['difficultyGraph']
+})
 
 export default {
   name: 'dashboard',
@@ -1252,7 +1475,16 @@ export default {
   },
   data: function () {
     return {
-      totalOrders: [440, 300, 200, 360, 380, 220, 440, 500, 410, 420, 380, 440],
+      blockNo: blockNo,
+      timestamp: timestamp,
+      difficulty: difficulty,
+      gasUsed: gasUsed,
+      transactionCount: transactionCount,
+      uncleCount: uncleCount,
+      transactionCountData: transactionCountData,
+      difficultyData: difficultyData,
+      // totalOrders: [440, 300, 200, 360, 380, 220, 440, 500, 410, 420, 380, 440],
+      totalOrders: [],
       totalSales: [220, 150, 100, 140, 420, 110, 350, 150, 205, 350, 180, 220],
       newCustomers: [340, 400, 200, 360, 380, 220, 440, 500, 410, 420, 380, 400],
       totalCustomers: [480, 150, 200, 360, 380, 220, 440, 500, 410, 420, 380, 200],
