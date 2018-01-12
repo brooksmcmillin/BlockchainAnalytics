@@ -51,13 +51,7 @@
             <div class="row">
               <div class="col-xs-6 col-sm-7 col-md-7">
                 <h2 class="card-count">
-                  <i-count-up
-                    :start="0"
-                    :end="timestamp"
-                    :decimals="0"
-                    :duration="10"
-                    :options="counterOptions"
-                  ></i-count-up>
+                {{ timestamp }}
                 </h2>
                 <p class="mb-0"></p>
               </div>
@@ -348,6 +342,30 @@
           </div>
           <div class="idb-block-content">
             <stacked-line-chart :width="300" :height="200" :line-chart-data="difficultyData"></stacked-line-chart>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-12 col-xl-6">
+        <div class="idb-block">
+          <div class="idb-block-title">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex align-self-center">
+                <h2>Block Time (seconds)</h2>
+              </div>
+              <div class="d-flex align-self-center idb-contextual-link">
+                <b-dropdown variant="link" class="no-caret-icon">
+                  <template slot="button-content">
+                    <i class="ti-more-alt"></i>
+                  </template>
+                  <b-dropdown-item href="#"><i class="ti-eye"></i> View</b-dropdown-item>
+                  <b-dropdown-item href="#"><i class="ti-pencil"></i> Edit</b-dropdown-item>
+                  <b-dropdown-item href="#"><i class="ti-trash"></i> Delete</b-dropdown-item>
+                </b-dropdown>
+              </div>
+            </div>
+          </div>
+          <div class="idb-block-content">
+            <sales-report-chart :width="300" :height="200" :chart-data="timeData"></sales-report-chart>
           </div>
         </div>
       </div>
@@ -1425,16 +1443,32 @@ let difficultyData = {
   ]
 }
 
-$.get('http://ethapi.inteligusolutions.com/basic_info.php', function (data) {
-  // console.log(data)
+let timeData = {
+  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+  datasets: [{
+    label: 'Block Time',
+    borderColor: '#F64A32',
+    pointBackgroundColor: '#FFF',
+    // backgroundColor: '#FFF',
+    borderWidth: 2,
+    lineTension: 0,
+    data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+  }
+  ]
+}
+
+$.get('http://ethapi.inteligusolutions.com/test.py', function (data) {
   data = JSON.parse(data)
-  console.log('test: ' + data['block'])
+  console.log('test: ' + data)
   blockNo = parseInt(data['block'])
   timestamp = parseInt(data['timestamp'])
   difficulty = parseInt(data['difficulty'])
   gasUsed = parseInt(data['gasUsed'])
-  transactionCount = data['transactions'].length
-  uncleCount = data['uncles'].length
+  transactionCount = data['transactions']
+  uncleCount = data['uncles']
+
+  console.log('timestamp: ' + timestamp)
+  console.log('uncles: ' + uncleCount)
 
   transactionCountData = {
     labels: [blockNo, blockNo - 1, blockNo - 2, blockNo - 3, blockNo - 4, blockNo - 5, blockNo - 6, blockNo - 7, blockNo - 8, blockNo - 9].reverse(),
@@ -1448,6 +1482,9 @@ $.get('http://ethapi.inteligusolutions.com/basic_info.php', function (data) {
 
   difficultyData.labels = [blockNo, blockNo - 1, blockNo - 2, blockNo - 3, blockNo - 4, blockNo - 5, blockNo - 6, blockNo - 7, blockNo - 8, blockNo - 9].reverse()
   difficultyData.datasets[0].data = data['difficultyGraph']
+
+  timeData.labels = [blockNo, blockNo - 1, blockNo - 2, blockNo - 3, blockNo - 4, blockNo - 5, blockNo - 6, blockNo - 7, blockNo - 8, blockNo - 9].reverse()
+  timeData.datasets[0].data = data['timeGraph']
 })
 
 export default {
@@ -1483,6 +1520,7 @@ export default {
       uncleCount: uncleCount,
       transactionCountData: transactionCountData,
       difficultyData: difficultyData,
+      timeData: timeData,
       // totalOrders: [440, 300, 200, 360, 380, 220, 440, 500, 410, 420, 380, 440],
       totalOrders: [],
       totalSales: [220, 150, 100, 140, 420, 110, 350, 150, 205, 350, 180, 220],
